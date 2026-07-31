@@ -1,3 +1,18 @@
-<body>
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/dQw4w9WgXcQ?list=RDdQw4w9WgXcQ" title="Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</body>
+<html>
+  <body style="margin:0;padding:0;">
+    <div style="position:relative; width:100%; padding-top:56.25%;">
+      <div id="player" style="position:absolute; top:0; left:0; width:100%; height:100%;"></div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script>
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          videoId: 'dQw4w9WgXcQ',
+          playerVars: { 'playsinline': 1 }
+        });
+      }
+    </script>
+  </body>
+</html>
